@@ -11,8 +11,9 @@ It combines graph convolutional networks with Similarity Graph Pooling (SGO) and
 - Supports reproducible experiments with preprocessed TCGA datasets
 
 ## Data Availability
-- The **raw datasets** are publicly available from **The Cancer Genome Atlas (TCGA)** through the R package [TCGAbiolinks](https://bioconductor.org/packages/release/bioc/html/TCGAbiolinks.html).
-- To ensure reproducibility, we provide **preprocessed feature matrices and train/test splits** in this repository under the `data/` folder.
+- Raw datasets are available from TCGA via the R package TCGAbiolinks.
+- We provide preprocessing scripts, train/test splits, and small sample matrices
+  under `data/` for reproducibility.
 
 ## Code Availability
 - Source code is available here on GitHub.
