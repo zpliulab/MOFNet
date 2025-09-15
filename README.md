@@ -26,3 +26,14 @@ git clone https://github.com/YourUsername/MOFNet.git
 cd MOFNet
 pip install -r requirements.txt
 python main.py --my_dataset BRCA_1 BRCA_2 BRCA_3 --my_dataset_test BRCA_test_1 BRCA_test_2 BRCA_test_3
+
+# 1) 在 R 中下载原始数据到 data/raw
+# （交互式）:
+#   source("scripts/get_tcga_data.R"); get_all("TCGA-BRCA"); get_all("TCGA-LGG"); get_all("TCGA-STAD")
+# 或命令行：
+#   Rscript -e 'source("scripts/get_tcga_data.R"); get_all("TCGA-BRCA")'
+
+# 2) 生成可复现的划分
+python scripts/preprocess_and_split.py --project TCGA-BRCA
+python scripts/preprocess_and_split.py --project TCGA-LGG
+python scripts/preprocess_and_split.py --project TCGA-STAD
