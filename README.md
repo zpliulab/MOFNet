@@ -16,7 +16,6 @@ It combines graph convolutional networks with Similarity Graph Pooling (SGO) and
 
 ## Code Availability
 - Source code is available here on GitHub.
-- An archived copy is provided at Zenodo with a DOI (see manuscript).
 
 ## Installation
 Clone this repository and install dependencies:
